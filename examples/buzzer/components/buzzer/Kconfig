@@ -1,0 +1,60 @@
+menu "Buzzer"
+
+config BUZZER_PIN
+    int "Select Buzzer Pin number"
+    range 0 34
+    default 14
+    help
+        Select the Buzzer Pin Number. Default is 14
+
+config UART_NUMBER
+    int "Select UART Number"
+    range 0 2
+    default 0
+    help
+        Select the UART Number. Default is 0
+
+config UART_BAUD_RATE
+    int "UART Baud Rate"
+    default 115200
+    help
+        Select the UART Baud Rate. Default is 115200
+
+config UART_TX_PIN
+    int "Select UART TX Pin"
+    range 0 50
+    default 1
+    help
+        Select the TX Pin. default is pin 1 for ESP32 
+        pin 10 - UART1
+        pin 17 - UART2
+
+config UART_RX_PIN
+    int "Select UART RX Pin"
+    range 0 50
+    default 3
+    help
+        Select the RX Pin. default is 3 for ESP32
+        pin 9 - UART1
+        pin 16- UART2
+
+config UART_RTS_PIN
+    int "Select UART RTS Pin"
+    range 0 22
+    default 22
+    help
+        Select the RTS Pin. default is 22 for ESP32
+        pin 11 - UART1
+        pin  7 - UART2
+
+config UART_CTS_PIN
+    int "Select UART CTS Pin"
+    range 0 50
+    default 19
+    help
+        Select the CTS Pin. default is 19 for ESP32
+        pin 6 - UART1
+        pin 8 - UART2
+
+		
+endmenu

@@ -1,0 +1,16 @@
+name: button_adc
+description: HW timer-based driver for ADC buttons for use with LVGL
+version: 1.0.0
+groups:
+  - input
+code_owners:
+  - NarnianCoder
+depends:
+  - driver
+thread_safe: yes
+targets:
+  - esp32
+license: MIT
+copyrights:
+  - name: NarnianCoder
+    year: 2024

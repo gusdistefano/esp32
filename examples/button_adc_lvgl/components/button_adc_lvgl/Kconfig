@@ -1,0 +1,33 @@
+menu "Button_ADC_LVGL"
+
+	config ADC_UNIT
+		choice
+			prompt "Select ADC UNIT"
+			default ADC_UNIT_1
+
+			config ADC_UNIT_1
+				bool "ADC UNIT 1"
+
+			config ADC_UNIT_2
+				bool "ADC UNIT 2"
+		endchoice
+
+	config ADC_CHANNEL
+		int "Select ADC1 Channel"
+		range 0 9
+		default 6
+		help
+			Select the ADC channel (Only ADC1)
+		
+	config BUTTON_ADC_MAX
+		int "Maximum number of BUTTON"
+		range 1 10
+		default 4
+	
+	config BUTTON_ADC_POLL_TIMEOUT
+		int "Poll timeout, ms"
+		range 1 1000
+		default 10
+
+		
+endmenu

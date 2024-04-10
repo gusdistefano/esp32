@@ -1,0 +1,16 @@
+name: buzzer
+description: Buzzer driver
+version: 1.0.0
+groups:
+  - input
+code_owners:
+  - gusdistefanor
+depends:
+  - driver
+thread_safe: yes
+targets:
+  - esp32
+license: MIT
+copyrights:
+  - name: gusdistefano
+    year: 2024
